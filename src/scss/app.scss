@@ -1,0 +1,315 @@
+@import './font.scss';
+
+$light-red: #ff5b5b;
+$light-brown: #cfb995;
+$mid-brown: #d0ba93;
+$light-gray: #b2b2b2;
+$weird-green: #57e690;
+$pale-orange: #ffbe5b;
+$pastel-orange: #ff915b;
+$light-gold: #ffdf5b;
+$kiwi-green: #8fe360;
+$light-black: #5e5e5e;
+$white-two: #ffffff;
+$white-three: #ecebe9;
+$white: #f9f9f9;
+$sky-blue: #57dbe6;
+$mid-black: #303030;
+
+.mid-black {
+    background-color: $mid-black;
+}
+.button-red {
+    background-color: $light-red;
+}
+.button-weird-green {
+    background-color: $weird-green;
+}
+.button-kiwi-green {
+    background-color: $kiwi-green;
+}
+.button-light-gold {
+    background-color: $light-gold;
+}
+.button-sky-blue {
+    background-color: $sky-blue;
+}
+.button-white {
+    background-color: $white;
+}
+.button-pale-orange {
+    background-color: $pale-orange;
+}
+.button-pastel-orange {
+    background-color: $pastel-orange;
+}
+.button-light-brown {
+    background-color: $light-brown;
+}
+
+.mid-black {
+    color: $mid-black;
+}
+.red {
+    color: $light-red;
+}
+.light-brown {
+    color: $light-brown;
+}
+.weird-green {
+    color: $weird-green;
+}
+.kiwi-green {
+    color: $kiwi-green;
+}
+.light-gold {
+    color: $light-gold;
+}
+.sky-blue {
+    color: $sky-blue;
+}
+.white {
+    color: $white;
+}
+.white-two {
+    color: $white-two;
+}
+.pale-orange {
+    color: $pale-orange;
+}
+.pastel-orange {
+    color: $pastel-orange;
+}
+.border-light-brown {
+    border: 1px solid $light-brown !important;
+}
+
+
+body {
+    font-family: 'Montserrat-Medium';
+    background-color: $white;
+}
+.row {
+    display: 'flex';
+    flex-wrap: 'wrap';
+}
+@media (min-width: 1800px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1400px;
+    }
+}
+@media (max-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1140px;
+    }
+}
+@media (max-width: 992px){
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 960px;
+    }
+}
+@media (max-width: 768px){
+    .container, .container-md, .container-sm {
+        max-width: 720px;
+    }
+}
+@media (max-width: 576px){
+    .container, .container-sm {
+        max-width: 540px;
+    }
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.navbar {
+    background-color: #333;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .navbar-ul {
+        text-align: right;
+        margin: 0 17rem 0 0;
+    }
+    .navbar-item {
+        text-align: center;
+        list-style-type: none;
+        display: inline-block;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        width: 15rem;
+        margin-right: auto;
+        letter-spacing: 1px;
+        padding: 20px 10px 21px 10px;
+        a {
+            color: $white-two;
+            margin-bottom: 100px;
+        }
+    }
+    .active {
+        background-color: $light-brown;
+    }
+    .navbar-dropdown {
+    }
+  
+    .navbar-dropdown-item {
+    }
+}
+.icon-user{
+    margin-right: 10px;
+    width: 20px;
+    content: url('../assets/assets_Homework_Front-End_01/shape.png');
+}
+.icon-dropdown{
+    margin-left: 40px;
+    content: url('../assets/assets_Homework_Front-End_01/path_2.png');
+}
+.icon-arrow-down{
+    margin-left: 40px;
+    float: right;
+    content: url('../assets/assets_Homework_Front-End_01/path-copy-7.png');
+}
+.icon-arrow-right{
+    margin-left: 10px;
+    content: url('../assets/assets_Homework_Front-End_01/path.png');
+}
+.icon-lightning{
+    content: url('../assets/assets_Homework_Front-End_01/green-light-copy.png');
+}
+.hero-banner{
+    position: relative;
+    background: cover;
+}
+.hero-image-container {
+    height: 100%;
+    background-image: url('../assets/assets_Homework_Front-End_01/bitmap.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .hero-text {
+        font-family: 'Montserrat-Light';
+        width: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top:50px;
+        .hero-title {
+            font-size: 72px;
+            margin-bottom: 0px;
+            padding: 10px 10px 0px 10px;
+            text-align: center;
+            color: $light-brown;
+            line-height: 1.5;
+        }
+        .hero-p {
+            font-family: 'Montserrat-Medium';
+            font-size: 1em;
+            font-size: 30px;
+            max-width: 550px;
+            margin: 0 0 57px 0;
+        
+        }
+        input {
+            font-size: 1.3rem;
+            background: transparent;
+            color: $white-two;
+            height: 50px;
+            border-radius: 5px;
+            width: 33%;
+            margin-bottom: 5%;
+            border: 1px solid $white-two;
+            text-indent: 32px;
+
+        
+        }
+    }
+    
+}
+.joke-category {
+    margin-top: 5rem;
+    button{
+        margin: 0.5rem;
+        letter-spacing: 1px;
+        border-radius: 3px;
+        border: 0;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.43;
+        font-family: 'Montserrat-Medium';
+        padding: 1% 2%;
+        :hover {
+            border: 1px solid #b2b2b2;
+        }
+    }
+}
+.legend {
+    border-top: 1px solid $white-three;
+    margin:2% 0 2% 0.7%;
+    button {
+        border: 0px;;
+        border-radius: 50px;
+        width: 12%;
+        background-color: $weird-green;
+        color: $white;
+        font-family: 'Montserrat-Medium';
+        padding: 0.5% 0%;
+    }
+}
+.card {
+    /* width: 30%;
+    */
+    font-size: 14px;
+    line-height: 1.25;
+    color: $mid-black;
+    padding: 1.2rem;
+    background-color: $white-two; 
+    margin: 20px 10px;
+    font-family: 'Montserrat-light';
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid $white-three;
+    border-radius: 0.2rem;
+
+    .card-title {
+        margin: 0px;
+        font-family: 'Montserrat-Medium';
+    }
+    .card-footer {
+        display: flex;
+        justify-content: flex-end;
+        h4 {
+            margin-bottom: 0px;
+            font-family: 'Montserrat-Medium';
+            a {
+                text-decoration: none;
+                color: $light-brown;
+
+            }
+            span {
+                vertical-align: middle;
+            }
+            i {
+                vertical-align: sub;
+            }
+        }
+    }
+}
+
+
